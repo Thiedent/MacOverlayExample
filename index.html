@@ -6,14 +6,14 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="overlay.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
+    <div id="test-block">Click me</div>
+    <div id="main-title">Parent Window Mouse coordinates</div>
+    <div id="mainwindow-text"></div>
     <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+    <script src="./mainwindow.js"></script>
   </body>
 </html>
